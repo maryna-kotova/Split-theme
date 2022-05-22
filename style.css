@@ -1,0 +1,215 @@
+/*
+ * Theme Name:  Split
+ * Author:      Maryna Kotova
+ * Author URI:  https://www.linkedin.com/in/maryna-kotova-5a75681a8/
+ * Description: Small theme
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: split
+ * Version:     1.0
+ */
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBook.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBookItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./fonts/GothamMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+    background: #000;
+}
+
+.slick-slide {
+    margin: 0;
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slider-content {
+    position: relative;
+}
+
+.slider-content .slider-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider-content img {
+    width: 100%;
+}
+
+.slider-content p {
+    margin-bottom: 0;
+}
+
+.articles-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.articles-container article,
+.articles-container .box-img,
+.articles-container p {
+    text-align: center;
+}
+
+.articles-container p {
+    text-align: center;
+}
+
+.island-content figure img {
+    width: 100%;
+}
+
+.islands {
+    background-color: #ebeda433;
+}
+
+.islands-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.island-content figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 968px) {
+    .header {
+        margin: 30px 120px;
+    }
+    .articles {
+        margin: 89px 120px 70px;
+    }
+    .articles-container article {
+        width: 30%;
+    }
+    .islands {
+        padding: 60px 120px;
+    }
+    .island-content {
+        width: 23%;
+        min-width: 200px;
+        margin-right: 5px;
+    }
+    .footer {
+        margin: 60px 120px 30px;
+    }
+
+}
+
+@media screen and (max-width: 967px) {
+    .header,
+    .articles,
+    .footer{
+        margin: 30px 60px;
+    }
+    .articles-container article {
+        width: 45%;
+    }
+    .islands {
+        padding: 30px 60px;
+    }
+    .island-content {
+        width: 45%;
+        min-width: 200px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .header,
+    .articles,
+    .footer{
+        margin: 30px;
+    }
+    .articles-container article {
+        width: 100%;
+    }
+    .islands {
+        padding: 30px;
+    }
+    .island-content {
+        width: 1000%;
+    }
+}
